@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Map</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
+<meta name="mobile-web-app-capable" content="yes">
+
+
+
+<script src="jquery_mobile/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).on('mobileinit', function(){///needs to be called before jquery mobile loads
+      $.mobile.loading('hide');
+    $( "body" ).pagecontainer({ defaults: true });
+    });
+    </script>
+<script src="jquery_mobile/jquery.mobile-1.4.2.min.js"></script>
+
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile.structure-1.4.2.css" />
+
+<link rel="stylesheet" href="styles.css" />
+<script type="text/javascript" src="javascript.js"></script>
+
+
+</head>
+
+
+<body class="ui-mobile-viewport">
+
+
+
+<div id="map_page" class="page" data-role="page">
+
+ <div id="map"><img id="map_img" src="images/map1.jpg" /></div>
+
+<a href="1foyle">The Foyle Bridge, Inishowen &amp; the Fanad Peninsula</a><br>
+<a href="2dunfanaghy">North West Dunfanaghy to Donegal Town</a><br>
+<a href="3sligo">Sligo Bay to Erris Head &amp; the Mullet Peninsula</a><br>
+<a href="4achill">Achill to Westport</a><br>
+<a href="5inishboffin">Inishbofin &amp; Connemara</a><br>
+<a href="6galway">Galway Bay</a><br>
+<a href="7flaggy">The Flaggy Shore, the Burren, the Cliffs of Moher</a><br>
+<a href="8liscannor">Liscannor Bay to Loop Head</a><br>
+<a href="9kerry">Kerry Head to the Dingle Peninsula</a><br>
+<a href="10ring">The Ring of Kerry</a><br>
+<a href="11beara">The Ring of Beara</a><br>
+<a href="12bantry">Bantry Bay to the Sheep's Head</a><br>
+<a href="13goleen">Goleen, Mizen Head &amp; Roaring Water Bay</a><br>
+<a href="14baltimore">Baltimore, Toe Head &amp; Galley Head</a><br>
+<a href="15kinsale">The Old Head of Kinsale</a><br>
+
+</div>
+
+<div id="landing_page" data-role="page">
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

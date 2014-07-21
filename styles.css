@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	color: #000;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto_light/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/roboto_light/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/roboto_light/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/roboto_medium/Roboto-Medium-webfont.woff') format('woff'),
+         url('fonts/roboto_medium/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('fonts/roboto_medium/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ui-content{
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	background-color: #1a1a1a;
+}
+
+body {
+	font-family: 'robotolight', Verdana, Geneva, sans-serif;
+	height: 100%;
+	background-color: #1a1a1a;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+
+a {
+	color: #00a1a2;
+	text-decoration: none;
+}
+
+.page{
+	background-color: #1a1a1a;
+	height: 100%;
+}
+
+.header {
+	position: fixed;
+	background-color: #81B0B5;
+	/*background-image:url(WAWFAlogocropped.png);*/
+	background-origin: content-box;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+	border-width:0;
+	box-shadow: -3px 3px 7px 0px rgba(0, 0, 0, 0.3);
+	text-align: center;	
+	/*padding-left: 4%;
+	padding-right: 4%;
+	padding-top:2%;
+	padding-bottom: 2%; */
+	box-sizing:border-box;
+
+}
+
+.headlogo{
+	height:100%;
+	/*width: 40%;
+	background-image: url(images/ireland.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+	margin:0 auto;
+
+}
+
+.restimage{
+	
+	width:100%;
+	/*width: 40%;
+	background-image: url(images/ireland.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+	margin:0 auto;
+	
+
+}
+
+h1{
+
+	text-align: center;
+}
+
+
+
+#map{
+	height:100%;
+	width: 100%;
+	/*background-image: url(images/ireland.gif);*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out, background-image 0.3s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.content{
+	height: 100%;
+}
+
+.restcontent{
+	height: 100%;
+	background-color:#FFF 
+}
+
+.header{
+	height: 8%;
+}
+
+
+.page{
+	height: 92%;
+}
+
+#zoom1{
+	background-color: rgba(255,0,0,0);
+	position: fixed;
+	width: 70%;
+	height: 23%;
+	top: 8%;
+	left: 0%;
+	z-index: 10;
+}
+
+#zoom2{
+	background-color: rgba(255,0,0,0);
+	position: fixed;
+	width: 70%;
+	height: 23%;
+	top: 31%;
+	left: 0%;
+}
+
+#zoom3{
+	background-color: rgba(255,0,0,0);
+	position: fixed;
+	width: 70%;
+	height: 23%;
+	top: 54%;
+	left: 0%;
+
+}
+
+#zoom4{
+	background-color: rgba(255,0,0,0);
+	position: fixed;
+	width: 80%;
+	height: 23%;
+	top: 77%;
+	left: 0%;
+
+}
+
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/ireland2.gif);
+	visibility: hidden;	
+	z-index: 2;
+	position: relative; 
+
+}
+
+.map_button{
+	background-color: blue;
+	outline: 1px green solid;
+	margin-bottom: 3%;
+	padding: 5%;
+	text-align: center;
+}
+
+#group1{
+/*	left: -81%;
+*/	transition: left 0.2s ease-out, -webkit-transform 0.2s ease-out;
+	transition-delay: 0.3s;
+	-webkit-transform: rotateY(-90deg);
+	-webkit-transform-origin:0% 50%;
+	-webkit-perspective:100px;
+	-webkit-perspective-origin: 10% 10%;
+}
+
+.button_group{
+	position: fixed;
+	z-index: 50;
+	top: 20%;
+	width: 80%;
+}
+
+a {
+	text-wrap:none;
+	text-decoration:none;
+	padding:0;
+	margin:0;
+
+}
+
+.captionbg{
+
+	position: relative;
+	float: both;
+
+	width:100%;
+	text-align: center;
+	background-color:#5F9F9F;
+	color: #FFF;
+	background-size: 40% 20%;
+	
+	/*margin-top:-40%; 
+	margin-left: 0%;
+	margin-right: 20%;
+	margin-bottom: 40%;*/
+
+
+}
+
+.bluebg{
+
+	position: absolute;
+	z-index: 5;
+	bottom: 0%;
+	width:70%;
+	
+	margin-left: 15%;
+	padding: 1%;
+
+	
+
+
+}

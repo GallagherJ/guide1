@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Map</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, minimal-ui" />
+<meta name="mobile-web-app-capable" content="yes">
+
+
+
+<script src="jquery_mobile/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).on('mobileinit', function(){///needs to be called before jquery mobile loads
+      $.mobile.loading('hide');
+    $( "body" ).pagecontainer({ defaults: true });
+    });
+    </script>
+<script src="jquery_mobile/jquery.mobile-1.4.2.min.js"></script>
+
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile.structure-1.4.2.css" />
+
+<link rel="stylesheet" href="styles.css" />
+<script type="text/javascript" src="javascript.js"></script>
+
+
+
+</head>
+
+
+<body class="ui-mobile-viewport">
+
+
+<div id="map_page" data-role="page">
+<a href="foyle">Foyle</a>
+</div>
+
+<div id="landing_page" data-role="page">
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

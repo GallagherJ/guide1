@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Map</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
+<meta name="mobile-web-app-capable" content="yes">
+
+
+
+<script src="jquery_mobile/jquery-2.1.0.min.js"></script>
+
+<script src="jquery_mobile/jquery.mobile-1.4.2.min.js"></script>
+
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile.structure-1.4.2.css" />
+
+<link rel="stylesheet" href="styles.css" />
+<script type="text/javascript" src="javascript.js"></script> 
+
+<script type="text/javascript">
+	
+	function zoom(area){
+		
+		if(area == 0){
+		$('#map').css('background-size', '100% 100%');
+		$('#map').css('background-position', '0% 0%');
+		$('#group1').css('-webkit-transform', 'rotateY(90deg)');
+
+		};
+
+		if(area == 1){
+		$('#map').css('background-size', '250% 250%');
+		$('#map').css('background-position', '45% -10%');
+		$('#group1').css('-webkit-transform', 'rotateY(0deg)');
+		};
+		
+		if (area == 2) {
+		$('#map').css('background-size', '250% 250%');
+		$('#map').css('background-position', '10% 30%');			
+		};		
+		
+		if (area == 3) {
+		$('#map').css('background-size', '250% 250%');
+		$('#map').css('background-position', '5% 70%');			
+		};
+
+		if (area == 4) {
+		$('#map').css('background-size', '250% 250%');
+		$('#map').css('background-position', '25% 100%');			
+		};
+
+	}
+</script>
+
+
+</head>
+
+<body class="ui-mobile-viewport">
+
+<div id="map-page" data-role="page" class="page">
+	
+<div onclick="zoom(0)" data-role="header" class="header" data-position="fixed" id="map-page-header"></div>
+	<div data-role="content" class="content" id="map-page-content">
+		
+	<div id="map">
+	<div id="overlay">
+	</div>
+	<div id="zoom1" onclick="zoom(1)"></div>
+	<div id="zoom2" onclick="zoom(2)"></div>
+	<div id="zoom3" onclick="zoom(3)"></div>
+	<div id="zoom4" onclick="zoom(4)"></div>
+
+	
+	
+		
+	</div>
+
+	<div class="button_group" id="group1">
+		<a href="1foyle/index.html"  data-transition="slide">
+            <div class="map_button" id="foyleMapBtn">
+                The Foyle Bridge, Inishowen &amp; the Fanad Peninsula
+            </div>
+        </a>
+
+        <a href="2dunfanaghy/index.html"  data-transition="slide">
+            <div class="map_button" id="dunfanaghyMapBtn">
+                North West Dunfanaghy to Donegal Town
+            </div>
+        </a>
+
+        <a href="3sligo/index.html"  data-transition="slide">
+            <div class="map_button" id="sligoMapBtn">
+                Sligo Bay to Erris Head &amp; the Mullet Peninsula
+            </div>
+        </a>
+            
+            
+            
+	</div>
+
+
+<!--<a href="2dunfanaghy">North West Dunfanaghy to Donegal Town</a><br>
+<a href="3sligo">Sligo Bay to Erris Head &amp; the Mullet Peninsula</a><br>
+<a href="4achill">Achill to Westport</a><br>
+<a href="5inishboffin">Inishbofin &amp; Connemara</a><br>
+<a href="6galway">Galway Bay</a><br>
+<a href="7flaggy">The Flaggy Shore, the Burren, the Cliffs of Moher</a><br>
+<a href="8liscannor">Liscannor Bay to Loop Head</a><br>
+<a href="9kerry">Kerry Head to the Dingle Peninsula</a><br>
+<a href="10ring">The Ring of Kerry</a><br>
+<a href="11beara">The Ring of Beara</a><br>
+<a href="12bantry">Bantry Bay to the Sheep's Head</a><br>
+<a href="13goleen">Goleen, Mizen Head &amp; Roaring Water Bay</a><br>
+<a href="14baltimore">Baltimore, Toe Head &amp; Galley Head</a><br>
+<a href="15kinsale">The Old Head of Kinsale</a><br> -->
+
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
